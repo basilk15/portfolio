@@ -1,30 +1,44 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styling with Background */
 body {
     font-family: 'Poppins', sans-serif;
-    background: #0e0e0e;
-    color: white;
+    background: url('bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #e0e0e0;
     line-height: 1.6;
 }
 
-h1, h2, h3, h4 {
-    font-weight: 600;
-}
-
+/* Glassmorphism Section Styling */
 section {
     padding: 60px 10%;
+    margin: 30px auto;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    max-width: 1200px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    font-weight: 600;
 }
 
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(135deg, #1a1a1a, #121212);
-    padding: 80px 10%;
+    flex-wrap: wrap;
+}
+
+.hero h1 {
+    font-size: 3rem;
 }
 
 .hero h1 span {
@@ -33,18 +47,21 @@ section {
 
 .hero-text {
     flex: 1;
+    padding: 20px;
 }
 
 .hero-img img {
     width: 280px;
     border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0,255,200,0.3);
+    box-shadow: 0 8px 25px rgba(0, 255, 200, 0.3);
 }
 
+/* Intro Section */
 .intro {
     text-align: center;
 }
 
+/* Cards Layout */
 .qualifications, .work-cards {
     display: flex;
     gap: 20px;
@@ -53,12 +70,11 @@ section {
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.08);
     border-radius: 15px;
     padding: 20px;
     flex: 1;
     min-width: 250px;
-    backdrop-filter: blur(10px);
     transition: transform 0.3s ease;
 }
 
@@ -66,19 +82,27 @@ section {
     transform: translateY(-5px);
 }
 
+/* Project Cards */
 .projects .project-card {
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.08);
     margin: 20px 0;
     padding: 20px;
     border-radius: 15px;
-    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
 }
 
+.projects .project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: #111;
-    color: #888;
+    background: rgba(0, 0, 0, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #bbb;
+    margin-top: 40px;
 }
 
 /* Fade In Animation */
