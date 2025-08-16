@@ -8,11 +8,13 @@
 /* Body Styling with Background */
 body {
     font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     background: url('bg.jpeg') no-repeat center center fixed;
     background-size: cover;
     color: #e0e0e0;
     line-height: 1.6;
     font-weight: 300;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* Glassmorphism Section Styling */
@@ -28,8 +30,10 @@ section {
 
 /* Headings */
 h1, h2, h3, h4 {
-    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 .hero {
